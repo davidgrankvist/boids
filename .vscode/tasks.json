@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "scripts/build.bat",
+       "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": "$msCompile",
+      "detail": "Build and run"
+    },
+    {
+      "label": "Build and run",
+      "type": "shell",
+      "command": "scripts/build_and_run.bat",
+       "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile",
+      "detail": "Build and run"
+    }
+  ]
+}
