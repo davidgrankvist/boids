@@ -26,6 +26,9 @@ struct SimulationSettings
 
     float minSpeed;
     float maxSpeed;
+
+    float boidSize;
+    Color boidColor;
 };
 
 struct BoidState 

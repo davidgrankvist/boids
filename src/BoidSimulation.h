@@ -10,7 +10,11 @@ public:
     void Update(float deltaTime);
 private:
     BoidState state;
-    void UpdateBoids(float deltaTime);
+    void InitializeSettings();
+    void SpawnRandomBoids();
+    void ApplyFlocking();
+    void SteerFromBounds();
+    void MoveBoids(float deltaTime);
     void Draw();
     static void DrawBoid(Boid boid);
 };
